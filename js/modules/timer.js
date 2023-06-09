@@ -1,5 +1,5 @@
-function timer () {
-    const deadline = '2023-02-14'; //deadline 
+function timer (id ,deadline) {
+    
 
     //функция определяющая разницу между дедлайн  и  настоящим 
     function getTimeRemaining(endtime){
@@ -75,7 +75,7 @@ function timer () {
 
 
 
-    setClock('.timer', deadline);
+    setClock(id, deadline);
 }
 
-module.exports = timer;
+export default timer;
